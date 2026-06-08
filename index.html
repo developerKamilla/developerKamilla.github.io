@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kamilla Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- TRANSITION -->
+  <div class="page-transition"></div>
+
+  <!-- NAV OVERLAY -->
+  <div class="nav-overlay"></div>
+
+  <!-- SIDEBAR DRAWER -->
+  <nav class="nav-drawer">
+    <a href="#" data-page="about" class="active">About</a>
+    <a href="#" data-page="projects">Projects</a>
+    <a href="#" data-page="hobbies">Hobbies</a>
+    <div class="nav-drawer-footer">Portfolio · 2026</div>
+  </nav>
+
+  <!-- TOP NAV -->
+  <nav>
+    <a class="nav-logo" href="#" onclick="showPage('about');return false;">ME</a>
+    <button class="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- SIDE DOTS -->
+  <div class="side-nav">
+    <div class="side-dot active" data-page="about" title="About"></div>
+    <div class="side-dot" data-page="projects" title="Projects"></div>
+    <div class="side-dot" data-page="hobbies" title="Hobbies"></div>
+  </div>
+
+  <!-- EMAIL BUTTON -->
+  <a class="email-btn" href="mailto:kamilla.farrakhova@gmail.com" title="Say hello">✉</a>
+
+  <!-- ===================
+       PAGE: ABOUT
+       =================== -->
+  <div id="page-about" class="page grad-bg">
+
+    <!-- HERO -->
+    <section class="about-hero">
+      <div class="about-hero-left">
+        <p class="about-tagline">
+          Designing digital experiences<br>that ease, beautify, and<br>delight moments in life.
+        </p>
+        <h1 class="about-name">
+          <span class="line"><span>KAMILLA</span></span>
+          <span class="line"><span>FARRAKHOVA</span></span>
+        </h1>
+        <!-- Memoji switcher -->
+        <div class="memoji-switcher">
+    <div class="memoji-thumb active">
+        <img src="me/me1.png" alt="" >
+    </div>
+
+    <div class="memoji-thumb">
+        <img src="me/me2.png" alt="">
+    </div>
+
+    <div class="memoji-thumb">
+        <img src="me/me3.png" alt="">
+    </div>
+
+    <div class="memoji-thumb">
+        <img src="me/me4.png" alt="">
+    </div>
+  </div>
+      </div>
+      <div class="about-hero-right">
+        <div class="hero-memoji-wrap">
+          <img id="hero-memoji" class="hero-memoji" src="me/me5.png" alt=""/>
+        </div>
+        <div class="hero-location-strip">
+          <span>MOSCOW</span>
+          <span id="live-date">—</span>
+          <span id="live-time">—</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <span>DESIGNER</span><span class="dot">✦</span>
+        <span>DEVELOPER</span><span class="dot">✦</span>
+        <span>CREATOR</span><span class="dot">✦</span>
+        <span>PHOTOGRAPHER</span><span class="dot">✦</span>
+        <span>THINKER</span><span class="dot">✦</span>
+        <span>DREAMER</span><span class="dot">✦</span>
+        <span>DESIGNER</span><span class="dot">✦</span>
+        <span>DEVELOPER</span><span class="dot">✦</span>
+        <span>CREATOR</span><span class="dot">✦</span>
+        <span>PHOTOGRAPHER</span><span class="dot">✦</span>
+        <span>THINKER</span><span class="dot">✦</span>
+        <span>DREAMER</span><span class="dot">✦</span>
+      </div>
+    </div>
+
+    <!-- BIO -->
+    <section class="about-bio">
+      <div class="bio-label reveal-left">BIO</div>
+      <div>
+        <p class="bio-text reveal">
+          I'm a <em>passionate creator</em> obsessed with creating unique inventions.
+          I build <em>Python bots</em>, shoot beautiful photographs, and edit videos that tell stories.
+          I care just as much about <em>impact</em> as I do about craft — always asking why,
+          always delivering quality.
+        </p>
+        <p class="bio-cjk reveal" style="transition-delay:0.2s;">关于我 · About Me</p>
+      </div>
+    </section>
+
+    <!-- WHAT I DO -->
+    <section class="about-work grad-bg">
+      <h2 class="section-title reveal">
+        WHAT I DO
+        <span class="cjk">我的工作</span>
+      </h2>
+      <div class="skills-grid stagger">
+        <div class="skill-card">
+          <div class="skill-number">01</div>
+          <div class="skill-title" data-scramble>PYTHON BOTS</div>
+          <p class="skill-desc">Building smart automation tools and bots with Python. From data scrapers to Telegram bots — if it can be automated, I automate it.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-number">02</div>
+          <div class="skill-title" data-scramble>FRONT-END DEV</div>
+          <p class="skill-desc">Building performant, accessible, and beautiful web experiences using modern HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-number">03</div>
+          <div class="skill-title" data-scramble>PHOTOGRAPHY</div>
+          <p class="skill-desc">I take beautiful shots. Capturing light, mood, and moments — turning ordinary scenes into something worth keeping forever.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-number">04</div>
+          <div class="skill-title" data-scramble>VIDEO EDITING</div>
+          <p class="skill-desc">Using CapCut to craft engaging edits — transitions, color grades, and storytelling cuts that make content actually worth watching.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-number">05</div>
+          <div class="skill-title" data-scramble>UI / UX DESIGN</div>
+          <p class="skill-desc">Crafting intuitive interfaces and seamless user journeys. Designing with empathy and purpose, from wireframes to polished visuals.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-number">06</div>
+          <div class="skill-title" data-scramble>CREATIVE THINKING</div>
+          <p class="skill-desc">Bridging ideas and execution. I understand the big picture and make sure every creative output drives real, meaningful results.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Q&A -->
+    <section class="about-qa">
+      <h2 class="section-title reveal">GET TO KNOW ME</h2>
+      <div class="qa-item">
+        <div class="qa-q">What drives you as a creator?</div>
+        <div class="qa-a">The moment something changes — when a complex problem resolves into something curious and simple. That invisible work is what I live for.</div>
+      </div>
+      <div class="qa-item">
+        <div class="qa-q">What do you do outside work?</div>
+        <div class="qa-a">You'll find me out running, listening to music on full blast, hunting for the perfect photo, or rewatching a favourite film. I believe a rich life outside work makes for better work.</div>
+      </div>
+      <div class="qa-item">
+        <div class="qa-q">Skill vs talent — what's your superpower?</div>
+        <div class="qa-a">Never giving up. If i don't know something, I put all effort in learning every detail of the subject. I haven't unlocked a talent in a specific activity, but I'm convinced that my talent is dedication</div>
+      </div>
+      <div class="qa-item">
+        <div class="qa-q">If you could go anywhere right now?</div>
+        <div class="qa-a">Somewhere breathtaking — a city I've never visited before, mountain routes I've never walked. My camera and headphones are always packed.</div>
+      </div>
+      <div class="qa-item">
+        <div class="qa-q">What are you obsessed with lately?</div>
+        <div class="qa-a">Generative art with Python, cinematic colour grading in LightRoom, and exploring the Computer Science.</div>
+      </div>
+    </section>
+
+  </div><!-- end #page-about -->
+
+
+  <!-- ===================
+       PAGE: PROJECTS
+       =================== -->
+  <div id="page-projects" class="page hidden">
+
+    <section class="projects-hero">
+      <div class="projects-bg-text">WORK</div>
+      <div class="projects-count reveal">03 PROJECTS</div>
+      <h1 class="projects-hero-title">
+        <span class="small-line">SELECTED WORK</span>
+        MY<br>PROJECTS
+      </h1>
+    </section>
+
+    <div class="projects-grid stagger">
+
+      <!-- Card 1 -->
+      <div class="project-card">
+        <div class="project-bg-color" style="background:#1a0a3a;"></div>
+        <div class="project-bg">🤖</div>
+        <div class="project-overlay"></div>
+        <div class="project-card-inner">
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Automation</span>
+          </div>
+          <h3 class="project-title">TRENDWATCHER</h3>
+          <div class="project-year">2026 — Python Development</div>
+        </div>
+        <a class="project-arrow" href="https://trendwatcheralpha.streamlit.app/" target="_blank" rel="noopener noreferrer">↗</a>
+        <img class="project-memoji" src="me/pur.png" alt=""/>
+      </div>
+
+      <!-- Card 2 — WIDE FEATURED -->
+      <div class="project-card">
+        <span class="project-featured">✦ FEATURED</span>
+        <div class="project-bg-color" style="background:#0a1a08;"></div>
+        <div class="project-bg" style="font-size:12rem;">📸</div>
+        <div class="project-overlay"></div>
+        <div class="project-card-inner">
+          <div class="project-tags">
+            <span class="project-tag">Photography</span>
+            <span class="project-tag">Visual Art</span>
+            <span class="project-tag">Editing</span>
+          </div>
+          <h3 class="project-title">PHOTO SERIES 2026</h3>
+          <div class="project-year">2026 — Photography & Post-Production</div>
+        </div>
+        <a class="project-arrow" href="https://t.me/OlegTB_bot" target="_blank" rel="noopener noreferrer">↗</a>
+        <img class="project-memoji" src="me/gr.png"  alt=""/>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="project-card">
+        <div class="project-bg-color" style="background:#2a0a0a;"></div>
+        <div class="project-bg">💸</div>
+        <div class="project-overlay"></div>
+        <div class="project-card-inner">
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Telegram</span>
+          </div>
+          <h3 class="project-title">FINANCE BOT</h3>
+          <div class="project-year">2024 — Telegram Bot</div>
+        </div>
+        <a class="project-arrow" href="https://t.me/OlegTB_bot" target="_blank" rel="noopener noreferrer">↗</a>
+        <img class="project-memoji" src="me/red.png"  alt=""/>
+      </div>
+
+    </div>
+
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <span>CODE</span><span class="dot">✦</span>
+        <span>SHOOT</span><span class="dot">✦</span>
+        <span>EDIT</span><span class="dot">✦</span>
+        <span>BUILD</span><span class="dot">✦</span>
+        <span>CREATE</span><span class="dot">✦</span>
+        <span>AUTOMATE</span><span class="dot">✦</span>
+        <span>CODE</span><span class="dot">✦</span>
+        <span>SHOOT</span><span class="dot">✦</span>
+        <span>EDIT</span><span class="dot">✦</span>
+        <span>BUILD</span><span class="dot">✦</span>
+        <span>CREATE</span><span class="dot">✦</span>
+        <span>AUTOMATE</span><span class="dot">✦</span>
+      </div>
+    </div>
+
+  </div><!-- end #page-projects -->
+
+
+  <!-- ===================
+       PAGE: HOBBIES
+       =================== -->
+  <div id="page-hobbies" class="page grad-bg">
+
+    <section class="hobbies-hero">
+      <h1 class="hobbies-hero-title reveal">
+        LIFE<br>
+        <span style="opacity:0.3">OUTSIDE</span><br>
+        WORK
+      </h1>
+    </section>
+
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <span>MUSIC</span><span class="dot">✦</span>
+        <span>RUNNING</span><span class="dot">✦</span>
+        <span>MOVIES</span><span class="dot">✦</span>
+        <span>PHOTOGRAPHY</span><span class="dot">✦</span>
+        <span>MUSIC</span><span class="dot">✦</span>
+        <span>RUNNING</span><span class="dot">✦</span>
+        <span>MOVIES</span><span class="dot">✦</span>
+        <span>PHOTOGRAPHY</span><span class="dot">✦</span>
+      </div>
+    </div>
+
+    <!-- ======== MUSIC SECTION ======== -->
+    <section class="music-section">
+      <div class="music-section-header reveal">
+        <h2>I LIVE FOR<br>MUSIC</h2>
+        <span class="cjk-sub">乐迷</span>
+      </div>
+
+      <!-- Scroll row -->
+      <div class="music-scroll-outer">
+        <div class="music-scroll-track">
+
+          <a class="music-card-new" href="https://music.yandex.ru/album/2004485/track/18088710?utm_source=web&utm_medium=copy_link" target="_blank" rel="noopener">
+            <div class="music-card-art" style="background:linear-gradient(135deg,#2a1a0a,#6a3a1a);">
+              <div class="disc-ring"></div>
+              🎸
+            </div>
+            <div class="music-card-info">
+              <div class="music-card-name">Photograph</div>
+              <div class="music-card-artist">Ed Sheeran</div>
+              <div class="music-card-platform">Yandex Music</div>
+            </div>
+          </a>
+
+          <a class="music-card-new" href="https://music.yandex.ru/album/10811/track/115022?utm_source=web&utm_medium=copy_link" target="_blank" rel="noopener">
+            <div class="music-card-art" style="background:linear-gradient(135deg,#1a003a,#5a0a6a);">
+              <div class="disc-ring"></div>
+              ☎️
+            </div>
+            <div class="music-card-info">
+              <div class="music-card-name">Telephone</div>
+              <div class="music-card-artist">Lady Gaga</div>
+              <div class="music-card-platform">Yandex Music</div>
+            </div>
+          </a>
+
+          <a class="music-card-new" href="https://music.yandex.ru/album/39948127/track/16507224?utm_source=web&utm_medium=copy_link" target="_blank" rel="noopener">
+            <div class="music-card-art" style="background:linear-gradient(135deg,#0a2a1a,#1a5a3a);">
+              <div class="disc-ring"></div>
+              🎵
+            </div>
+            <div class="music-card-info">
+              <div class="music-card-name">Rude</div>
+              <div class="music-card-artist">Magic!</div>
+              <div class="music-card-platform">Yandex Music</div>
+            </div>
+          </a>
+
+          <a class="music-card-new" href="https://music.yandex.ru/album/6083179/track/38213984?utm_source=web&utm_medium=copy_link" target="_blank" rel="noopener">
+            <div class="music-card-art" style="background:linear-gradient(135deg,#2a2a00,#6a6a00);">
+              <div class="disc-ring"></div>
+              😊
+            </div>
+            <div class="music-card-info">
+              <div class="music-card-name">From now on</div>
+              <div class="music-card-artist">Hugh Jackman</div>
+              <div class="music-card-platform">Yandex Music</div>
+            </div>
+          </a>
+
+          <a class="music-card-new" href="https://music.yandex.ru/album/40392020/track/74074387?utm_source=web&utm_medium=copy_link" target="_blank" rel="noopener">
+            <div class="music-card-art" style="background:linear-gradient(135deg,#1a0a2a,#3a2a5a);">
+              <div class="disc-ring"></div>
+              🎹
+            </div>
+            <div class="music-card-info">
+              <div class="music-card-name">Got My Mind Set On You</div>
+              <div class="music-card-artist">Shakin' Stevens</div>
+              <div class="music-card-platform">Yandex Music</div>
+            </div>
+          </a>
+
+          <a class="music-card-new" href="https://music.yandex.ru/" target="_blank" rel="noopener">
+            <div class="music-card-art" style="background:linear-gradient(135deg,#1a1a1a,#333);">
+              <div class="disc-ring"></div>
+              🎧
+            </div>
+            <div class="music-card-info">
+              <div class="music-card-name">My Playlist</div>
+              <div class="music-card-artist">All favourites</div>
+              <div class="music-card-platform">Yandex Music</div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== RUNNING SECTION ======== -->
+    <section class="hobby-section hobby-running">
+      <div class="hobby-content reveal-left">
+        <div class="hobby-label">Passion № 02</div>
+        <h2 class="hobby-title">
+          RUNNING
+          <span class="cjk">跑步 · Runner</span>
+        </h2>
+        <p class="hobby-desc">
+          My peaceful haven. Early mornings, empty streets, a great playlist
+          and the feeling that the world is blurring. Running clears my head and
+          fuels every creative project that follows.
+        </p>
+      </div>
+      <div class="hobby-visual">
+        <div class="run-stats stagger" style="width:100%;padding:40px;">
+          <div class="run-stat">
+            <span class="num count-up" data-target="10" data-suffix="K">0</span>
+            <span class="label">Favourite Distance</span>
+          </div>
+          <div class="run-stat">
+            <span class="num count-up" data-target="3" data-suffix="×">0</span>
+            <span class="label">Per Week</span>
+          </div>
+          <div class="run-stat">
+            <span class="num count-up" data-target="9" data-suffix=" AM">0</span>
+            <span class="label">Start Time</span>
+          </div>
+          <div class="run-stat">
+            <span class="num" style="color:var(--yellow);font-family:var(--font-display);font-size:3rem;">♾️</span>
+            <span class="label">Motivation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== MOVIES SECTION ======== -->
+    <section class="hobby-section hobby-movies">
+      <div class="hobby-content reveal">
+        <div class="hobby-label" style="color:#888;">Passion № 03</div>
+        <h2 class="hobby-title" style="color:var(--black);">
+          MOVIES
+          <span class="cjk" style="color:#555;">影迷 · Film Lover</span>
+        </h2>
+        <p class="hobby-desc" style="color:#444;">
+          Great films are the ultimate design school. I love movies that make you laugh,
+          cry, and think all in two hours. Marvel, feel-good comedies, and
+          anything that has a great colour grade.
+        </p>
+        <img src="me/movie.jpg" alt="" style="width:140px;margin-top:30px;filter:drop-shadow(0 10px 20px rgba(0,0,0,0.2));"/>
+      </div>
+      <div class="hobby-visual">
+        <div class="movie-list reveal">
+          <div class="movie-item">
+            <div class="movie-num">01</div>
+            <div>
+              <div class="movie-title">Kung Fu Panda</div>
+              <div class="movie-genre">Animation · Adventure</div>
+            </div>
+          </div>
+          <div class="movie-item">
+            <div class="movie-num">02</div>
+            <div>
+              <div class="movie-title">Me Before You</div>
+              <div class="movie-genre">Romance · Drama</div>
+            </div>
+          </div>
+          <div class="movie-item">
+            <div class="movie-num">03</div>
+            <div>
+              <div class="movie-title">The Intern</div>
+              <div class="movie-genre">Comedy · Drama</div>
+            </div>
+          </div>
+          <div class="movie-item">
+            <div class="movie-num">04</div>
+            <div>
+              <div class="movie-title">Intouchables (1+1)</div>
+              <div class="movie-genre">Drama · French Cinema</div>
+            </div>
+          </div>
+          <div class="movie-item">
+            <div class="movie-num">05</div>
+            <div>
+              <div class="movie-title">Black Panther</div>
+              <div class="movie-genre">Marvel · Action</div>
+            </div>
+          </div>
+          <div class="movie-item">
+            <div class="movie-num">06</div>
+            <div>
+              <div class="movie-title">Captain America: Civil War</div>
+              <div class="movie-genre">Marvel · Superhero</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== PHOTOGRAPHY SECTION ======== -->
+    <section class="hobby-section hobby-photo">
+      <div class="hobby-content reveal-left">
+        <div class="hobby-label" style="color:rgba(255,255,255,0.5);">Passion № 04</div>
+        <h2 class="hobby-title">
+          PHOTO-<br>GRAPHY
+          <span class="cjk">摄影 · Photographer</span>
+        </h2>
+        <p class="hobby-desc">
+          I take beautiful shots. Every scene has a story — finding it is the art.
+          From golden hour portraits to gritty street photography, my camera is
+          always within reach.
+        </p>
+      </div>
+      <div class="hobby-visual">
+        <div class="photo-memoji-wrap reveal">
+          <img class="photo-memoji" src="me/city.JPG" style="width:440px;margin-top:30px;filter:drop-shadow(0 10px 20px rgba(0,0,0,0.2));"></div>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- end #page-hobbies -->
+
+  <script src="script.js"></script>
+</body>
+</html>
